@@ -60,6 +60,9 @@
     <Compile Include="JdkVersionTest.Learning.cs">
       <DependentUpon>JdkVersionTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="JdkVersionTest.Parse.cs">
+      <DependentUpon>JdkVersionTest.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

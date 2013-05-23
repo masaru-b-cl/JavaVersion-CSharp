@@ -22,35 +22,35 @@ namespace JavaVersion.Test
 
     [TestCategory("IsValid")]
     [TestMethod]
-    public void familyVersionが数値でないならfalseを返す()
+    public void familyNumberが数値でないならfalseを返す()
     {
       JdkVersion.IsValid("JDKxu40").Is(false);
     }
 
     [TestCategory("IsValid")]
     [TestMethod]
-    public void familyVersionとupdateVersionの区切りがuでないならfalseを返す()
+    public void familyNumberとupdateNumberの区切りがuでないならfalseを返す()
     {
       JdkVersion.IsValid("JDK7x40").Is(false);
     }
 
     [TestCategory("IsValid")]
     [TestMethod]
-    public void updateVersionが数値でないならfalseを返す()
+    public void updateNumberが数値でないならfalseを返す()
     {
       JdkVersion.IsValid("JDK7u9x").Is(false);
     }
 
     [TestCategory("IsValid")]
     [TestMethod]
-    public void familyVersionが0ならfalseを返す()
+    public void familyNumberが0ならfalseを返す()
     {
       JdkVersion.IsValid("JDK00u40").Is(false);
     }
 
     [TestCategory("IsValid")]
     [TestMethod]
-    public void updateVersionが0ならfalseを返す()
+    public void updateNumberが0ならfalseを返す()
     {
       JdkVersion.IsValid("JDK7u00").Is(false);
     }
