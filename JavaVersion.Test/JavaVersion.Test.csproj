@@ -54,6 +54,12 @@
     <Compile Include="ChainingAssertion.MSTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="JdkVersionTest.cs" />
+    <Compile Include="JdkVersionTest.IsValid.cs">
+      <DependentUpon>JdkVersionTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JdkVersionTest.Learning.cs">
+      <DependentUpon>JdkVersionTest.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
