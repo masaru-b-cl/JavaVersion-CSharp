@@ -9,8 +9,7 @@ namespace JavaVersion.Test
     [TestMethod]
     public void Validなバージョンを渡すとバージョンオブジェクトを返す()
     {
-      var version = JdkVersion.Parse("JDK7u40");
-      version.IsInstanceOf<JdkVersion>();
+      JdkVersion version = JdkVersion.Parse("JDK7u40");
       version.FamilyNumber.Is(7);
       version.UpdateNumber.Is(40);
     }
