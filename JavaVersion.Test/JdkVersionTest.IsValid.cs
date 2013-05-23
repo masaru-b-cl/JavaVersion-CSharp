@@ -50,9 +50,9 @@ namespace JavaVersion.Test
 
     [TestCategory("IsValid")]
     [TestMethod]
-    public void updateNumberが0ならfalseを返す()
+    public void updateNumberが0ならtrueを返す()
     {
-      JdkVersion.IsValid("JDK7u00").Is(false);
+      JdkVersion.IsValid("JDK7u00").Is(true);
     }
   }
 }
